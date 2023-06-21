@@ -11,7 +11,7 @@ roverImageArray=[
 randomNumber=Math.floor(Math.random()*4);
 console.log(randomNumber);
 roverWidth= 100;
-roverHeight=90;
+roverHeight= 90;
 
 backgroundImage=roverImageArray[randomNumber];
 console.log("backgroundImage= "+ backgroundImage);
@@ -34,7 +34,7 @@ function add(){
     }
 
     function uploadRover(){
-        ctx.drawImage(roverImgTag,roverX,roverY,canvas.width,canvas.height)
+        ctx.drawImage(roverImgTag,roverX,roverY,roverWidth,roverHeight)
     }
 
     window.addEventListener("keydown",myKeyDown);
